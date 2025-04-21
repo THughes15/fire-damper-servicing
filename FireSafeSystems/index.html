@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FireSafe Systems | BS 9999 Fire Damper & Control Panel Servicing</title>
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+    img { max-width: 100%; height: auto; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== Utility Classes ===== */
+    .container { width: 90%; max-width: 1140px; margin: auto; }
+    .btn { display: inline-block; background: #B22222; color: #fff; padding: 12px 28px; border-radius: 4px; font-weight: 600; transition: background 0.2s ease; }
+    .btn:hover { background: #8f1c1c; }
+    .section { padding: 60px 0; background: #fff; }
+    .section-alt { background: #fafafa; }
+    h2.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #B22222; }
+
+    /* ===== Header ===== */
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 5px 0; }
+    .nav-logo img { width: 200px; }
+    .nav-links a { margin-left: 15px; font-weight: 600; color: #333; }
+    .nav-links a:hover { color: #B22222; }
+
+    /* ===== Hero ===== */
+    .hero { background: url('images/rose-galloway-green-o6asPZdUjUs-unsplash.jpg') center/cover no-repeat; color: #fff; text-align: center; padding: 120px 20px; position: relative; }
+    .hero::after { content:""; position: absolute; top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.55); }
+    .hero-content { position: relative; z-index: 1; max-width: 700px; margin: auto; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.1rem; margin-bottom: 32px; }
+
+    /* ===== Services ===== */
+    .services-grid { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .service-card { background: #fff; border-radius: 6px; padding: 24px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
+    .service-card:hover { transform: translateY(-4px); }
+    .service-icon { font-size: 2.5rem; margin-bottom: 18px; color: #B22222; }
+    .service-card h3 { margin-bottom: 12px; }
+
+    /* ===== CTA Strip ===== */
+    .cta-strip { background: #333; color:#fff; text-align: center; padding: 50px 20px; }
+    .cta-strip h2 { margin-bottom: 18px; }
+
+    /* ===== Footer ===== */
+    footer { background: #222; color: #bbb; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container nav">
+      <div class="nav-logo">
+        <!-- Replace the src below with the correct path or URL to your FireSafe logo -->
+        <img src="images/logo-firesafe-no-bg-no-slogan-header.png" alt="FireSafe Systems Logo">
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#bs9999">BS 9999</a>
+        <a href="#about">Why Choose Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>BS:9999 Compliant Fire Damper & Control Panel Servicing</h1>
+      <p>Stay compliant, stay protected. Annual inspections, testing and certification carried out by qualified engineers.</p>
+      <a href="#contact" class="btn">Book Your Service</a>
+    </div>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Core Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><img src="images/build-icon.png" alt="Build Icon"></div>
+          <h3>Functional Testing</h3>
+          <p>Comprehensive activation tests for dampers and panels to ensure full operational readiness.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><img src="images/emergency-icon.png" alt="Emergency Icon"></div>
+          <h3>Emergency Activation</h3>
+          <p>Simulation of fire scenarios to verify automatic response and fail‑safe functionality.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><img src="images/reporting-icon.png" alt="Reporting Icon"></div>
+          <h3>Compliance Reporting</h3>
+          <p>BS:9999 logbook entries and PDF certificates for your records and insurer requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BS 9999 Compliance Section ===== -->
+  <section id="bs9999" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">BS:9999 – Annual Servicing Is a Legal Requirement</h2>
+      <p>British Standard <strong>BS:9999</strong> sets out the fire safety code of practice for building design, management and use. It clearly states that fire dampers and their control systems must be <strong>inspected, tested and serviced at least once every 12 months</strong>.</p>
+      <p>Failure to comply can lead to enforcement action under the Regulatory Reform (Fire Safety) Order 2005, invalidate insurance policies and expose duty‑holders to prosecution. FireSafe Systems delivers fully‑documented annual servicing so you can demonstrate compliance and protect lives, property and your legal position.</p>
+    </div>
+  </section>
+
+  <!-- ===== Why Choose Us Section ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Why Choose FireSafe?</h2>
+      <ul class="services-grid">
+        <li class="service-card">
+          <div class="service-icon"><img src="images/verified-icon.png" alt="Verified Icon"></div>
+          <h3>Certified Engineers</h3>
+          <p>All technicians are fully trained and accredited for fire‑safety compliance.</p>
+        </li>
+        <li class="service-card">
+          <div class="service-icon"><img src="images/time-icon.png" alt="Time Icon"></div>
+          <h3>Fast Turnaround</h3>
+          <p>Minimal disruption with precise scheduling and rapid reporting.</p>
+        </li>
+        <li class="service-card">
+          <div class="service-icon"><img src="images/global-icon.png" alt="Global Icon"></div>
+          <h3>Nationwide Coverage</h3>
+          <p>Serving facilities across the UK with regional teams on standby.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CTA Strip ===== -->
+  <section class="cta-strip" id="contact">
+    <h2>Ready to Schedule Your Annual Service?</h2>
+    <p>Call us on <a href="tel:01234567890" style="color:#FFD700; font-weight:bold;">01234 567 890</a> 
+      or email <a href="mailto:servicing@firesafesystems.co.uk" style="color:#FFD700; font-weight:bold;">servicing@firesafesystems.co.uk</a>
