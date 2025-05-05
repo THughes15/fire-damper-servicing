@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fire‑Damper Control‑Panel Survey</title>
+
+  <!--   GLOBAL & FORM‑SPECIFIC STYLES   -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+    <!-- ===== Header ===== -->
+    <header>
+    <div class="container nav">
+        <div class="nav-logo">
+        <a href="/" class="logo-link">
+        <img src="images/logo-firesafe-no-bg-no-slogan-header.png" alt="FireSafe Systems Logo"></a>
+        </div>
+        <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#bs9999">BS 9999</a>
+        <a href="#about">Why Choose Us</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    </header>
+
+<!-- ========= SURVEY SECTION ========= -->
+<section class="survey-section">
+  <div class="container">
+    <h1>Fire‑Damper Control‑Panel Survey</h1>
+
+    <form class="survey" action="#" method="post">
+
+      <!-- 1. Project / Site -->
+      <fieldset>
+        <legend>1. Project / Site Information</legend>
+        <div class="grid-2">
+          <div>
+            <label>Building / Site Name *</label>
+            <input required name="siteName" type="text">
+          </div>
+          <div>
+            <label>Survey Date *</label>
+            <input required name="surveyDate" type="date">
+          </div>
+        </div>
+
+        <label>Site Address *</label>
+        <textarea required name="siteAddress"></textarea>
+
+        <div class="grid-2">
+          <div>
+            <label>Responsible Person *</label>
+            <input required name="clientName" type="text">
+          </div>
+          <div>
+            <label>RP Contact Number</label>
+            <input name="clientPhone" type="tel">
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label>Surveyor Name *</label>
+            <input required name="surveyorName" type="text">
+          </div>
+          <div>
+            <label>Surveyor Company</label>
+            <input name="surveyorCo" type="text">
+          </div>
+        </div>
+
+        <label>Unique Survey ID</label>
+        <input name="surveyID" type="text">
+      </fieldset>
+
+      <!-- 2. Panel Identification -->
+      <fieldset>
+        <legend>2. Panel Identification</legend>
+        <div class="grid-2">
+          <div>
+            <label>Panel Asset Tag *</label>
+            <input required name="assetTag" type="text">
+          </div>
+          <div>
+            <label>Panel Location *</label>
+            <input required name="panelLocation" type="text" placeholder="e.g. Plantroom L2 Grid C4">
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div><label>Manufacturer / Model</label><input name="manufacturer" type="text"></div>
+          <div><label>Serial No. / Year</label><input name="serialYear" type="text"></div>
+        </div>
+
+        <div class="grid-2">
+          <div><label>Supply Voltage</label><input name="voltage" type="text" placeholder="230 V AC"></div>
+          <div>
+            <label>Backup Supply</label>
+            <select name="backup">
+              <option value="">Select</option><option>UPS</option><option>Battery</option><option>None</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 3. Associated Assets -->
+      <fieldset>
+        <legend>3. Associated Fire‑Damper Assets</legend>
+        <label>Total Dampers Served *</label>
+        <input required name="totalDampers" type="number" min="0">
+
+        <label>Attach / List Damper Schedule</label>
+        <textarea name="damperSchedule" placeholder="Upload ref or paste list of IDs, types, sizes …"></textarea>
+
+        <label>Mixed Systems Present?</label>
+        <select name="mixed">
+          <option value="">Select</option><option>No</option><option>Smoke Control</option>
+          <option>Lobby Relief</option><option>Other</option>
+        </select>
+      </fieldset>
+
+      <!-- 4. Wiring & Field Devices -->
+      <fieldset>
+        <legend>4. Wiring &amp; Field Devices</legend>
+        <div class="grid-2">
+          <div><label>Cable Type / Size</label><input name="cable" type="text" placeholder="e.g. FP200 1.5 mm²"></div>
+          <div><label>Approx. Route Length (m)</label><input name="routeLen" type="number" min="0"></div>
+        </div>
+
+        <label>Containment Type &amp; Condition</label>
+        <input name="containment" type="text">
+
+        <label>End‑of‑Line Devices Fitted *</label>
+        <select required name="eol"><option value="">Select</option><option>Yes</option><option>No</option></select>
+
+        <label>Spare Ways Available</label>
+        <input name="spareWays" type="text">
+      </fieldset>
+
+      <!-- 5. Inputs & Interfaces -->
+      <fieldset>
+        <legend>5. Inputs &amp; Interfaces</legend>
+        <label>Fire Alarm Interface *</label>
+        <input required name="fireIface" type="text" placeholder="Relay, Modbus, 24 V DC etc.">
+
+        <label>Fan / AHU Interlocks</label>
+        <input name="fanIface" type="text">
+
+        <label>BMS Monitoring Points</label>
+        <textarea name="bms"></textarea>
+
+        <label>Local Alarm / Beacon</label>
+        <select name="localAlarm"><option value="">Select</option><option>Yes</option><option>No</option></select>
+      </fieldset>
+
+      <!-- 6. Physical & Environmental -->
+      <fieldset>
+        <legend>6. Physical &amp; Environmental Condition</legend>
+        <label>Enclosure Integrity *</label>
+        <select required name="enclosure">
+          <option value="">Select</option><option>Good</option><option>Minor Damage</option><option>Severe Damage</option>
+        </select>
+
+        <div class="grid-2">
+          <div>
+            <label>Ingress of Dust / Moisture</label>
+            <select name="ingress"><option value="">Select</option><option>None</option><option>Light</option><option>Heavy</option></select>
+          </div>
+          <div>
+            <label>Ambient Temp (°C)</label>
+            <input name="ambientTemp" type="number" step="0.1">
+          </div>
+        </div>
+
+        <label>Nearby Hazards</label>
+        <input name="hazards" type="text">
+      </fieldset>
+
+      <!-- 7. Documentation -->
+      <fieldset>
+        <legend>7. Compliance Documentation On‑Site</legend>
+        <label>UKCA / CE Mark Visible *</label>
+        <select required name="ukca"><option value="">Select</option><option>Yes</option><option>No</option></select>
+
+        <label>Declaration of Conformity Present</label>
+        <select name="doc"><option value="">Select</option><option>Yes</option><option>No</option></select>
+
+        <label>Latest Maintenance Log Present *</label>
+        <select required name="log"><option value="">Select</option><option>Yes</option><option>No</option></select>
+      </fieldset>
+
+      <!-- 8. Functional Testing -->
+      <fieldset>
+        <legend>8. Functional Testing</legend>
+        <label>Manual Test Switch Operates *</label>
+        <select required name="manualTest"><option value="">Select</option><option>Pass</option><option>Fail</option><option>Not Tested</option></select>
+
+        <label>Remote Signal Received *</label>
+        <select required name="remoteSig"><option value="">Select</option><option>Pass</option><option>Fail</option><option>Not Tested</option></select>
+
+        <label>All Dampers Indicate Closed *</label>
+        <select required name="allClosed"><option value="">Select</option><option>Yes</option><option>No</option></select>
+
+        <label>Response Time (s)</label>
+        <input name="respTime" type="number" step="0.1">
+      </fieldset>
+
+      <!-- 9. Health & Safety -->
+      <fieldset>
+        <legend>9. Health &amp; Safety / Access</legend>
+        <label>Safe Access Route Available</label>
+        <select name="safeAccess"><option value="">Select</option><option>Yes</option><option>No</option></select>
+
+        <label>Working‑at‑Height Required?</label>
+        <select name="wHeight"><option value="">Select</option><option>Yes</option><option>No</option></select>
+
+        <label>Asbestos Present / Presumed?</label>
+        <select name="asbestos"><option value="">Select</option><option>Yes</option><option>No</option></select>
+      </fieldset>
+
+      <!-- 10. Observations -->
+      <fieldset>
+        <legend>10. Observations &amp; Non‑Conformities</legend>
+        <textarea name="observations" placeholder="Describe issues, reference damper IDs, attach photos…"></textarea>
+      </fieldset>
+
+      <!-- 11. Recommendations -->
+      <fieldset>
+        <legend>11. Recommendations</legend>
+        <textarea name="recommendations" placeholder="List remedial actions and priority (Critical/High/Medium/Low)…"></textarea>
+      </fieldset>
+
+      <!-- 12. Sign‑off -->
+      <fieldset>
+        <legend>12. Sign‑off</legend>
+        <div class="grid-2">
+          <div>
+            <label>Surveyor Signature *</label>
+            <input required name="surveyorSig" type="text" placeholder="Name or digital sign">
+          </div>
+          <div>
+            <label>Client / RP Signature</label>
+            <input name="clientSig" type="text">
+          </div>
+        </div>
+        <label>Next Inspection Due Date</label>
+        <input name="nextDue" type="date">
+      </fieldset>
+
+      <!-- SUBMIT -->
+      <div class="btn-row">
+        <button class="btn-primary" type="submit">Submit Survey</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Your Service | FireSafe Systems</title>
+
+  <!-- global styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- booking‑page tweaks -->
+  <link rel="stylesheet" href="/css/booking.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="container nav">
+    <div class="nav-logo">
+      <a href="/" class="logo-link">
+        <img src="/images/logo-firesafe-no-bg-no-slogan-header.png"
+             alt="FireSafe Systems logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#bs9999">BS 9999</a>
+      <a href="/#about">Why Choose Us</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Booking Section (photo background) ===== -->
+<section class="booking-section">
+  <div class="container">
+
+    <form class="booking" action="https://formspree.io/f/yourFormID" method="post">
+      <fieldset>
+        <legend>Your Details</legend>
+        <div class="grid-2">
+          <div>
+            <label>Name *</label>
+            <input required name="name" type="text">
+          </div>
+          <div>
+            <label>Email *</label>
+            <input required name="email" type="email">
+          </div>
+        </div>
+        <label>Phone</label>
+        <input name="phone" type="tel">
+        <label>Company / Site *</label>
+        <input required name="company" type="text">
+      </fieldset>
+
+      <fieldset>
+        <legend>Service Requirements</legend>
+        <div class="grid-2">
+          <div>
+            <label>Building Address *</label>
+            <textarea required name="address"></textarea>
+          </div>
+          <div>
+            <label>Preferred Service Date *</label>
+            <input required name="date" type="date">
+
+            <label>Preferred Time Slot</label>
+            <select name="time">
+              <option value="">Any</option>
+              <option>Morning (08:00‑12:00)</option>
+              <option>Afternoon (12:00‑16:00)</option>
+            </select>
+          </div>
+        </div>
+
+        <label>Number of Fire Dampers (estimate) *</label>
+        <input required name="qty" type="number" min="1">
+
+        <label>Additional Notes</label>
+        <textarea name="notes"
+                  placeholder="Access restrictions, permit info, hazards…"></textarea>
+      </fieldset>
+
+      <div class="btn-row">
+        <button class="btn-primary" type="submit">Request Booking</button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- ===== CTA Strip ===== -->
+<section class="cta-strip" id="contact">
+  <h2>Ready to Schedule Your Annual Service?</h2>
+  <p>
+    Call us on
+    <a href="tel:01234567890" class="cta-link">01234 567 890</a> or e‑mail
+    <a href="mailto:servicing@firesafesystems.co.uk"
+       class="cta-link">servicing@firesafesystems.co.uk</a>
+  </p>
+</section>
+
+</body>
+</html>

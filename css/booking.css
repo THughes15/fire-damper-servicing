@@ -1,0 +1,57 @@
+/* ─────────────────────────────────────────── */
+/*  BOOKING PAGE (re‑uses home hero picture)   */
+/* ─────────────────────────────────────────── */
+
+/* full‑width photo background with dark overlay */
+.booking-section{
+    position:relative;
+    padding:3rem 0;
+    background:url("/images/rose-galloway-green-o6asPZdUjUs-unsplash.jpg") center/cover no-repeat; /* ← same file as home page */
+    color:#fff;
+  }
+  
+  /* darken image slightly for text legibility */
+  .booking-section::before{
+    content:"";
+    position:absolute;inset:0;
+    background:rgba(0,0,0,.55);
+  }
+  
+  /* keep content and form above overlay */
+  .booking-section .container,
+  form.booking{position:relative;z-index:1;}
+  
+  /* booking card */
+  .booking{
+    background:#fff;
+    color:var(--dark);
+    padding:2rem;
+    border-radius:var(--rad);
+    box-shadow:var(--shadow);
+  }
+  .booking fieldset{border:0;margin:1.5rem 0;padding:0;}
+  .booking legend{font-weight:700;color:var(--dark);margin-bottom:.6rem;}
+  .booking label{display:block;margin:.6rem 0 .25rem;font-weight:600;font-size:.9rem;}
+  .booking input,
+  .booking select,
+  .booking textarea{
+    width:100%;
+    padding:.5rem;
+    border:1px solid #c8c8c8;
+    border-radius:var(--rad);
+  }
+  .booking textarea{min-height:80px;resize:vertical;}
+  
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  @media(max-width:700px){.grid-2{grid-template-columns:1fr}}
+  
+  .btn-row{text-align:center;margin-top:2rem;}
+  
+  /* CTA strip */
+  .cta-strip{
+    background:var(--primary);
+    color:#fff;text-align:center;padding:2rem 1rem;
+  }
+  .cta-strip h2{margin:0 0 .6rem}
+  .cta-strip .cta-link{color:var(--accent);font-weight:bold;text-decoration:none}
+  

@@ -1,0 +1,23 @@
+/* -------- SURVEY PAGE -------- */
+.survey-section{background:var(--light);padding:3rem 0;}
+.survey-section h1{color:var(--primary);margin-bottom:1.5rem;}
+
+form.survey{
+  background:#fff;padding:2rem;border-radius:var(--rad);
+  box-shadow:var(--shadow);
+}
+form.survey fieldset{border:0;padding:0;margin:1.5rem 0;}
+form.survey legend{font-weight:700;color:var(--dark);margin-bottom:.6rem;}
+
+form.survey label{display:block;margin:.6rem 0 .25rem;font-weight:600;font-size:.9rem;}
+form.survey input,
+form.survey select,
+form.survey textarea{
+  width:100%;padding:.5rem;border:1px solid #c8c8c8;border-radius:var(--rad);
+}
+form.survey textarea{min-height:80px;resize:vertical;}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+@media(max-width:700px){.grid-2{grid-template-columns:1fr;}}
+
+form.survey .btn-row{text-align:center;margin-top:2rem;}
